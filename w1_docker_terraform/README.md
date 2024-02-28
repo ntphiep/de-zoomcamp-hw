@@ -1,6 +1,8 @@
 # Introduction
 
-Run 
+Text note file in this project: [Note](https://docs.google.com/document/u/0/d/e/2PACX-1vRJUuGfzgIdbkalPgg2nQ884CnZkCg314T_OBq-_hfcowPxNIA0-z5OtMTDzuzute9VBHMjNYZFTCc1/pub?pli=1)
+
+Run the following to create Psql container.
 ```bash
 docker-compose up -d
 ```
