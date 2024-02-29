@@ -10,31 +10,39 @@ terraform {
 provider "google" {
   project     = var.project
   region      = var.region
-  credentials = file(var.credentials)
+  credentials = var.credentials
 }
 
 
 
-resource "google_storage_bucket" "auto-expire" {
-  name          = "miscel-415720-bk-1"
-  location      = var.location
-  force_destroy = true
 
-  lifecycle_rule {
-    condition {
-      age = 1
-    }
-    action {
-      type = "AbortIncompleteMultipartUpload"
-    }
-  }
 
-  lifecycle_rule {
-    condition {
-      age = 1
-    }
-    action {
-      type = "AbortIncompleteMultipartUpload"
-    }
-  }
+# resource "google_storage_bucket" "auto-expire" {
+#   name          = "miscel-415720-bk-1"
+#   location      = var.location
+#   force_destroy = true
+
+#   lifecycle_rule {
+#     condition {
+#       age = 1
+#     }
+#     action {
+#       type = "AbortIncompleteMultipartUpload"
+#     }
+#   }
+
+#   lifecycle_rule {
+#     condition {
+#       age = 1
+#     }
+#     action {
+#       type = "AbortIncompleteMultipartUpload"
+#     }
+#   }
+# }
+
+
+resource "google_bigquery_dataset" "demo_dataset" {
+  dataset_id = "clm_demo_dataset"
+  location   = var.location
 }

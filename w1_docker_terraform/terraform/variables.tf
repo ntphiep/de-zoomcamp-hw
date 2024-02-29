@@ -1,6 +1,6 @@
 variable "credentials" {
   description = "My credential kay"
-  default     = "/home/hiep/Desktop/de-zoomcamp-hw/w1_docker_terraform/terraform/keys/service-account.json"
+  default     = "./keys/service-account.json"
 }
 
 variable "region" {
