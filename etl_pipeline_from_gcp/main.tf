@@ -15,12 +15,26 @@
  */
 
 
+
+
+terraform {
+  required_version = ">= 0.14"
+
+  required_providers {
+    # Cloud Run support was added on 3.3.0
+    google = ">= 3.3"
+  }
+}
+
+
+
 # Variables ----------------------------------------------------
 
 variable "project_id" {
     type = string
     default = "fake-user-1d508"
 }
+
 
 variable "project_number" {
     type = string
@@ -40,6 +54,16 @@ variable "basename" {
   type = string
   default = "etlpipeline-tf"
 }
+
+
+provider "google" {
+  project = var.project_id
+  region  = var.region
+  zone    = var.zone
+}
+
+
+
 
 # Enable APIs   ---------------------------------------------------------
 
