@@ -9,4 +9,3 @@ Thanks very much to [**DataTalksClub**](https://github.com/DataTalksClub)!
 - [sf-pear](https://github.com/sf-pear/data-engineering)
 - [rebekamukherjee](https://github.com/rebekamukherjee/data-engineering-zoomcamp)
 - [10Kang](https://github.com/10Kang/DE_Zoomcamp2024_ZY)
-- 
