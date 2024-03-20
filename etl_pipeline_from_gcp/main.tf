@@ -14,8 +14,12 @@
  * limitations under the License.
  */
 
+
+# Variables ----------------------------------------------------
+
 variable "project_id" {
     type = string
+    default = "fake-user-1d508"
 }
 
 variable "project_number" {
@@ -24,10 +28,12 @@ variable "project_number" {
 
 variable "region" {
   type = string
+  default = "us-west2"
 }
 
 variable "zone" {
   type = string
+  default = "us-west2-a"
 }
 
 variable "basename" {
