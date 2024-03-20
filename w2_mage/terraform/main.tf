@@ -15,10 +15,9 @@ provider "google" {
   zone    = var.zone
 }
 
-# #############################################
-# #               Enable API's                #
-# #############################################
-# Enable IAM API
+
+# Enable API ------------------------------------------------------------------
+
 resource "google_project_service" "iam" {
   service            = "iam.googleapis.com"
   disable_on_destroy = false
@@ -61,7 +60,7 @@ resource "google_project_service" "sqladmin" {
 }
 
 
-# Create the Cloud Run service
+# Create the Cloud Run service ------------------------------------------------
 resource "google_cloud_run_service" "run_service" {
   name     = var.app_name
   location = var.region
