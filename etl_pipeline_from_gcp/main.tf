@@ -41,7 +41,7 @@ variable "basename" {
   default = "etlpipeline-tf"
 }
 
-# Enable APIs
+# Enable APIs   ---------------------------------------------------------
 
 variable "gcp_service_list" {
   description = "The list of apis necessary for the project"
@@ -103,7 +103,10 @@ resource "google_project_iam_member" "composerAgent" {
   depends_on = [google_project_service.all]
 }
 
-# Create Composer environment
+
+
+
+# Create Composer environment  -----------------------------------------------------------------------------------
 resource "google_composer_environment" "example" {
   project   = var.project_id
   name      = "example-environment"
@@ -188,20 +191,22 @@ resource "google_storage_bucket" "pipeline_files" {
 }
 
 resource "google_storage_bucket_object" "json_schema" {
-  name       = "jsonSchema.json"
-  source     = "${path.module}/files/jsonSchema.json"
+  name       = "schema.json"
+  source     = "${path.module}/files/schema.json"
   bucket     = google_storage_bucket.pipeline_files.name
   depends_on = [google_storage_bucket.pipeline_files]
 }
+
 resource "google_storage_bucket_object" "input_file" {
-  name       = "inputFile.txt"
-  source     = "${path.module}/files/inputFile.txt"
+  name       = "input.txt"
+  source     = "${path.module}/files/input.txt"
   bucket     = google_storage_bucket.pipeline_files.name
   depends_on = [google_storage_bucket.pipeline_files]
 }
+
 resource "google_storage_bucket_object" "transform_CSVtoJSON" {
-  name       = "transformCSVtoJSON.js"
-  source     = "${path.module}/files/transformCSVtoJSON.js"
+  name       = "transform.js"
+  source     = "${path.module}/files/transform.js"
   bucket     = google_storage_bucket.pipeline_files.name
   depends_on = [google_storage_bucket.pipeline_files]
 }
@@ -217,7 +222,7 @@ data "google_composer_environment" "example" {
 
 resource "google_storage_bucket_object" "dag_file" {
   name       = "dags/composer-dataflow-dag.py"
-  source     = "${path.module}/files/composer-dataflow-dag.py"
+  source     = "${path.module}/files/airflow.py"
   bucket     = replace(replace(data.google_composer_environment.example.config.0.dag_gcs_prefix, "gs://", ""),"/dags","")
   depends_on = [google_composer_environment.example, google_storage_bucket.pipeline_files, google_bigquery_table.weather_table]
 }
