@@ -45,7 +45,14 @@ docker compose up
 
 Now, navigate to http://localhost:6789 in your browser! Voila! You're ready to get started with the course. 
 
+
+
+
 ### What just happened?
+
+
+### Deploy to GCP
+
 
 We just initialized a new mage repository. It will be present in your project under the name `magic-zoomcamp`. If you changed the varable `PROJECT_NAME` in the `.env` file, it will be named whatever you set it to.
 
