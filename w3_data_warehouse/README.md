@@ -6,9 +6,19 @@
 ## OLTP vs OLAP
 
 ### **vi**
-![alt text](image.png)
+![alt text](imgs/image.png)
 
 
 ### **en**
-![alt text](image-1.png)
-![alt text](image-2.png)
+![alt text](imgs/image-1.png)
+![alt text](imgs/image-2.png)
+
+
+## BigQuery-Best Practice
+Cost reduction
+- Avoid SELECT *
+- Price your queries before running them
+- Use clustered or partitioned tables
+- 
+
+## ML in BigQuery
