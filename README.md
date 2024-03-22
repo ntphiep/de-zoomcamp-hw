@@ -2,7 +2,7 @@
 
 Thanks very much to [**DataTalksClub**](https://github.com/DataTalksClub)!
 
-## Other participants's repo
+## Other participants's repo:
 - [jxareas](https://github.com/jxareas/de-zoomcamp-2024)
 - [Yokanisha](https://github.com/Yokanisha/DataZoomCamp2024)
 - [nnphuyen563](https://github.com/nnphuyen563/DE-Zoomcamp-2024)
@@ -10,6 +10,7 @@ Thanks very much to [**DataTalksClub**](https://github.com/DataTalksClub)!
 - [rebekamukherjee](https://github.com/rebekamukherjee/data-engineering-zoomcamp)
 - [10Kang](https://github.com/10Kang/DE_Zoomcamp2024_ZY)
 - [gdq12](https://github.com/gdq12/data-engineering-zoomcamp-2024)
+- [iobruno](https://github.com/iobruno/data-engineering-zoomcamp)
 
 
 
@@ -36,7 +37,7 @@ Below I am only concentrating on Yellow and green cabs
 | VendorID              |            | 2                   |
 | lpep_pickup_datetime  |            | 2021-01-01 00:15:56 |
 | lpep_dropoff_datetime |            | 2021-01-01 00:19:52 |
-| store_and_fwd_flag    |            | N,                  |
+| store_and_fwd_flag    |            | N                   |
 | RatecodeID            |            | 1                   |
 | PULocationID          |            | 43                  |
 | DOLocationID          |            | 151                 |
@@ -56,7 +57,7 @@ Below I am only concentrating on Yellow and green cabs
 
 
 
-### Taxi zone Loopup
+### Taxi zone Loopup:
 
 | Columns      | Definition | Example        |
 | ------------ | ---------- | -------------- |
