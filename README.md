@@ -81,3 +81,8 @@ CSV data:
 * Misc (zone lookup file): https://github.com/DataTalksClub/nyc-tlc-data/releases/tag/misc
 
 The data was copied from the [NYC TLC website](https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page)
+
+
+
+## GCP service summary
+![alt text](imgs/image.png)

@@ -19,6 +19,6 @@ Cost reduction
 - Avoid SELECT *
 - Price your queries before running them
 - Use clustered or partitioned tables
-- 
+- Materialize query results in stages
 
 ## ML in BigQuery
