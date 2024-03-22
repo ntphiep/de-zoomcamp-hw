@@ -11,6 +11,7 @@ Thanks very much to [**DataTalksClub**](https://github.com/DataTalksClub)!
 - [10Kang](https://github.com/10Kang/DE_Zoomcamp2024_ZY)
 - [gdq12](https://github.com/gdq12/data-engineering-zoomcamp-2024)
 - [iobruno](https://github.com/iobruno/data-engineering-zoomcamp)
+- [Zhe-YAN-Berlin](https://github.com/Zhe-YAN-Berlin/Data_Eden)
 
 
 
