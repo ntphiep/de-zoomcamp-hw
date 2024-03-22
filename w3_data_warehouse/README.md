@@ -15,10 +15,12 @@
 
 
 ## BigQuery-Best Practice
-Cost reduction
-- Avoid SELECT *
-- Price your queries before running them
-- Use clustered or partitioned tables
-- Materialize query results in stages
+- Cost reduction
+  - Avoid SELECT *
+  - Price your queries before running them
+  - Use clustered or partitioned tables
+  - Materialize query results in stages
 
+- Query Performance
+  - 
 ## ML in BigQuery
