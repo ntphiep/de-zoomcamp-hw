@@ -161,12 +161,3 @@ The query is a simple aggregation query counting the distinct values of all rows
 
 In some cases, queries that involve only metadata operations (such as retrieving the count of distinct values) may have a lower or zero-byte processed cost compared to queries that involve scanning and processing actual data.
  
-## Submitting the solutions
-
-* Form for submitting: TBD
-* You can submit your homework multiple times. In this case, only the last submission will be used. 
-
-Deadline: TBD
-
-
-
